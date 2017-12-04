@@ -1,0 +1,58 @@
+.Font {
+  /* Style */
+  &-Thin {
+    font-weight: 100;
+  }
+  &-Light {
+    font-weight: 300;
+  }
+  &-Bold {
+    font-weight: 700;
+  }
+  &-Black {
+    font-weight: 900;
+  }
+  &-Ita {
+    font-style: italic;
+  }
+  &-Upper {
+    text-transform: uppercase;
+  }
+  &-Capitalize {
+    text-transform: capitalize;
+  }
+
+  /* Colors */
+  &-Blue {
+    color: $blue;
+  }
+
+  &-Purple {
+    color: $purple;
+  }
+
+  &-Green {
+    color: $green;
+  }
+
+  &-Yellow {
+    color: $yellow;
+  }
+
+  &-White {
+    color: $white;
+  }
+
+  &-Red {
+    color: $red;
+  }
+
+  &-DarkGray {
+    color: $grey;
+  }
+
+  /* Size */
+  &-Big {
+    font-size: 18px;
+  }
+}
