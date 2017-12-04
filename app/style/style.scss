@@ -10,9 +10,13 @@
   Text Domain: kale-kale
 */
 
+/* Global */
 @import "global/bootstrap";
 @import "global/breakpoint";
 @import "global/space";
 @import "global/colors";
 @import "global/font";
 @import "global/layout";
+
+/* Components */
+@import "component/navbar";

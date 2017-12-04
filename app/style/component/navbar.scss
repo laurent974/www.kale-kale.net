@@ -1,0 +1,209 @@
+.navbar.navbar-default {
+  border-radius   : 0px;
+  background-color: transparent;
+  margin-bottom   : 0;
+  border          : 0;
+  z-index    : 10;
+
+  @include breakpoint(xs) {
+    position     : fixed;
+    width        : 100%;
+    border-bottom: 1px solid $red;
+    top          : 0;
+    background-color: $white;
+    z-index    : 6;
+  }
+
+  .navbar-inner {
+    text-align: center;
+  }
+
+  .navbar-nav {
+    float: none;
+
+    @include breakpoint(sm) {
+      display: inline-block;
+    }
+  }
+
+  & > .container-fluid {
+    .navbar-brand {
+      margin-top    : $spaceMedium;
+      margin-left   : -5px;
+      padding       : 0;
+
+      @include breakpoint(xs) {
+        margin-left: $spaceMedium;
+      }
+    }
+
+    > .navbar-header {
+      @include breakpoint(xs) {
+        padding-bottom: $spaceSmall;
+        border-bottom: 1px solid $red;
+
+        .navbar-toggle {
+          margin-right: $spaceMedium;
+          margin-top: $spaceRegular;
+        }
+      }
+    }
+  }
+
+
+  //item Menu
+  .navbar-nav > .active > a {
+    background-color: transparent;
+    @extend .Font-Black;
+    @extend .Font-Blue;
+
+    &:before {
+      transform: translateY(0);
+    }
+  }
+
+  .navbar-nav > li > a {
+    transform : perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    position  : relative;
+    overflow  : hidden;
+    @extend .Font-Big;
+    @extend .Font-Light;
+    padding: $spaceExtraLarge 0;
+    margin: 0 $spaceMedium;
+
+    @include breakpoint(xs) {
+      padding: $spaceMedium 0;
+    }
+
+    &:hover {
+      &:before {
+        transform: translateY(0);
+      }
+    }
+
+    &:before {
+      content                   : "";
+      position                  : absolute;
+      width                     : 100%;
+      margin                    : 0 auto;
+      z-index                   : -1;
+      left                      : 0;
+      right                     : 0;
+      bottom                    : 0;
+      background                : $red;
+      height                    : 8px;
+      transform                 : translateY(8px);
+      transition-property       : transform;
+      transition-duration       : 0.3s;
+      transition-timing-function: ease-out;
+    }
+  }
+
+  .navbar-Lang {
+    .wpml-ls-legacy-list-horizontal {
+      padding: 0;
+      margin-top: $spaceExtraLarge;
+      border: 0;
+
+      @include breakpoint($min: 768px, $max: 863px) {
+        position: absolute;
+        right: 0;
+        top: 23px;
+      }
+    }
+
+    &-Mobile {
+      display: inline-block !important;
+      float: right;
+      margin-top: 11px;
+      margin-right: 0;
+
+      @include breakpoint(sm) {
+        display: none !important;
+      }
+    }
+  }
+
+  &.navbar-fixed-top {
+    &.navbar-theme {
+      background-color: $white;
+      border-bottom: 1px solid $grey;
+      box-shadow: 0 0 5px rgba(255,255,255,.8);
+
+      .navbar-nav {
+        margin-top: $spaceMedium;
+      }
+
+      .navbar-nav > li > a {
+        padding: $spaceMedium 0;
+      }
+
+      .Logo {
+        @include breakpoint(md) {
+          transform: scale(0.55) rotate(0.01deg);
+          transform-origin: 24% -25%;
+          margin-top: $spaceSmall;
+        }
+      }
+
+      .navbar-Lang .wpml-ls-legacy-list-horizontal {
+        margin-top: $spaceRegular;
+      }
+
+      .navbar-StartAProject {
+        margin-top: 7px;
+      }
+    }
+  }
+
+  .navbar-brand.navbar-theme {
+      font-size: 18px;
+  }
+
+  .navbar-brand.navbar-theme,
+  .navbar-inner.navbar-theme,
+  &.navbar-fixed-top.navbar-theme,
+  .navbar-brand,
+  .navbar-inner,
+  .navbar-nav > li > a,
+  .Logo,
+  .navbar-Lang .wpml-ls-legacy-list-horizontal,
+  .navbar-StartAProject {
+      transition: 0.8s;
+      -webkit-transition:  0.8s;
+  }
+
+  .navbar-toggle {
+    overflow: hidden;
+    background-color: $white;
+    border: 0px;
+
+    &:focus,
+    &:hover {
+      background-color: $white;
+    }
+
+    .icon-bar {
+      background-color: $red;
+      transition: opacity, transform;
+      transition-duration: 200ms;
+      transition-timing-function: cubic-bezier(0.7, 0, 0, 0.7);
+    }
+
+    &:not(.collapsed) {
+      .icon-bar {
+        &:nth-child(2) {
+          transform: translateY(6px) rotate(45deg);
+        }
+        &:nth-child(3) {
+          opacity: 0;
+          transform: translateX(-100%);
+        }
+        &:nth-child(4) {
+          transform: translateY(-6px) rotate(-45deg);
+        }
+      }
+    }
+  }
+}
