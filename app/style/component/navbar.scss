@@ -31,6 +31,9 @@
       margin-top    : $spaceMedium;
       margin-left   : -5px;
       padding       : 0;
+      float: none;
+      display: block;
+      height: auto;
 
       @include breakpoint(xs) {
         margin-left: $spaceMedium;
@@ -38,6 +41,8 @@
     }
 
     > .navbar-header {
+      float: none;
+
       @include breakpoint(xs) {
         padding-bottom: $spaceSmall;
         border-bottom: 1px solid $red;
@@ -52,24 +57,14 @@
 
 
   //item Menu
-  .navbar-nav > .active > a {
-    background-color: transparent;
-    @extend .Font-Black;
-    @extend .Font-Blue;
-
-    &:before {
-      transform: translateY(0);
-    }
-  }
-
   .navbar-nav > li > a {
     transform : perspective(1px) translateZ(0);
     box-shadow: 0 0 1px transparent;
     position  : relative;
     overflow  : hidden;
     @extend .Font-Big;
-    @extend .Font-Light;
-    padding: $spaceExtraLarge 0;
+    @extend .Font-Black;
+    padding: $spaceBig $spaceMedium;
     margin: 0 $spaceMedium;
 
     @include breakpoint(xs) {
@@ -78,7 +73,7 @@
 
     &:hover {
       &:before {
-        transform: translateY(0);
+        transform: translateY(37px);
       }
     }
 
@@ -91,12 +86,23 @@
       left                      : 0;
       right                     : 0;
       bottom                    : 0;
+      border-top-left-radius    : 5px;
+      border-top-right-radius   : 5px;
       background                : $red;
-      height                    : 8px;
-      transform                 : translateY(8px);
+      height                    : 50px;
+      transform                 : translateY(43px);
       transition-property       : transform;
       transition-duration       : 0.3s;
       transition-timing-function: ease-out;
+    }
+  }
+
+  .navbar-nav > .active > a {
+    background-color: transparent;
+    @extend .Font-White;
+
+    &:before {
+      transform: translateY(0);
     }
   }
 
