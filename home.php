@@ -134,7 +134,7 @@
         </section><!-- /.Box -->
 
         <section class="Box"><!-- .Box -->
-          <div class="Box-Decoration Box-Decoration--yellow"></div>
+          <div class="Box-Decoration Box-Decoration--white"></div>
           <div class="container"><!-- .container -->
             <h3 class="Title Title--green Font-Title">Notre Histoire</h3>
             <article class="History"><!-- .History -->
@@ -147,6 +147,20 @@
                 <p class="Font-DarkGray Font-Paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, nesciunt magni. Doloribus rem nisi temporibus, saepe ab sunt! Magnam odit laboriosam illum eaque voluptatibus voluptate commodi minima dicta iste enim.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam magnam quo obcaecati nesciunt explicabo reprehenderit sapiente veniam quibusdam accusamus aliquid consequuntur vero dolore, doloremque possimus non dignissimos repellendus delectus doloribus.</p>
               </div><!-- /.History-Description -->
             </article><!-- /.History -->
+          </div><!-- /.container -->
+        </section><!-- /.Box -->
+
+        <section class="Box Box--purple"><!-- .Box -->
+          <div class="Box-Decoration Box-Decoration--purple"></div>
+          <div class="container"><!-- .container -->
+            <article class="Quote"><!-- .Quote -->
+              <div class="Quote-ImageLeft"></div>
+              <p class="Font-White Font-Black Font-Quote col-md-10 col-md-push-1">
+                Notre but principal dans la vie est d’aider les autres. Et si vous ne pouvez pas les aider, essayez au moins ne pas les blesser.
+              </p>
+              <p class="Quote-Author Font-Purple Font-Black Font-Quote">Dalaï Lama</p>
+              <div class="Quote-ImageRight"></div>
+            </article><!-- /.Quote -->
           </div><!-- /.container -->
         </section><!-- /.Box -->
       </main><!-- /.Main -->
