@@ -64,7 +64,7 @@
       </div><!-- /.Header -->
 
       <main class="Main"><!-- .Main --->
-        <div id="Carousel" class="carousel slide" data-ride="carousel"><!-- .Carousel -->
+        <section id="Carousel" class="carousel slide" data-ride="carousel"><!-- .Carousel -->
           <!-- Indicators -->
           <ol class="carousel-indicators">
             <li data-target="#Carousel" data-slide-to="0" class="active"></li>
@@ -73,20 +73,28 @@
           </ol>
 
           <!-- Wrapper for slides -->
-          <div class="carousel-inner">
+          <div class="carousel-inner"><!-- .carousel-inner -->
             <div class="item active">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/banniere-index1.jpg" alt="Slogan1">
-              <p class="Carousel-Slogan">Une <strong>phrase Slogan</strong> par ici</p>
+              <p class="Carousel-Slogan Font-Thin">Une <strong>phrase Slogan</strong> par ici</p>
             </div>
 
             <div class="item">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/banniere-index1.jpg" alt="Chicago">
+              <p class="Carousel-Slogan Font-Thin">Une <strong>phrase Slogan</strong> par ici</p>
             </div>
 
             <div class="item">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/banniere-index1.jpg" alt="New York">
+              <p class="Carousel-Slogan Font-Thin">Une <strong>phrase Slogan</strong> par ici</p>
             </div>
-          </div>
+          </div><!-- /.carousel-inner -->
+        </section><!-- /.Carousel -->
+
+        <section class="Box Box--yellow"><!-- .Box -->
+          <div class="Box-Decoration"></div>
+          <h3 class="Title Title--red">Les derniers Projets</h3>
+        </section><!-- /.Box -->
       </main><!-- /.Main -->
 
       <?php wp_footer(); ?>
