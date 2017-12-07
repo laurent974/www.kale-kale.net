@@ -1,0 +1,55 @@
+.Footer {
+  background: lighten($grey, 20%);
+  padding: $spaceExtraLarge $spaceBig $spaceBig;
+
+  &-Box {
+    margin-top: $spaceLarge;
+    color: $white;
+  }
+
+  .Title {
+    font-size: 24px;
+  }
+
+  &-Column {
+    text-align: center;
+  }
+
+  &Nav {
+    font-size: 18px;
+    font-weight: normal;
+
+    li {
+      margin-top: $spaceSmall;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    } 
+  }
+
+  &-Social {
+    display: inline-block;
+    margin-left: $spaceSmall;
+  }
+
+  &Extension {
+    padding: $spaceBig;
+    background: $black;
+    color: lighten($grey, 20%);
+    text-align: center;
+
+    a {
+      color: $white;
+    }
+
+    .MadeWithLove {
+      display: inline-block;
+      float: right;
+
+      &-Coeur {
+        color: #e25555;
+      }
+    }
+  }
+}
