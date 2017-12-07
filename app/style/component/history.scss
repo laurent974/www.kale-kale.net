@@ -1,9 +1,32 @@
 .History {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  margin-top: $spaceExtraLarge;
+
   &-Logo {
-    max-width: 150px;
+    width: 20%;
+
+    img {
+      max-width: 300px;
+    }
   }
 
   &-Description {
+    padding: 0 $spaceBig;
 
+    p {
+      margin-top: $spaceBig;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &-Logo,
+  &-Description {
+    display: table-cell;
+    vertical-align: middle;
   }
 }
