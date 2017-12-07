@@ -138,8 +138,14 @@
           <div class="container"><!-- .container -->
             <h3 class="Title Title--green Font-Title">Notre Histoire</h3>
             <article class="History"><!-- .History -->
-              <img class="History-Logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt="New York">
-              <p class="History-Description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, nesciunt magni. Doloribus rem nisi temporibus, saepe ab sunt! Magnam odit laboriosam illum eaque voluptatibus voluptate commodi minima dicta iste enim.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam magnam quo obcaecati nesciunt explicabo reprehenderit sapiente veniam quibusdam accusamus aliquid consequuntur vero dolore, doloremque possimus non dignissimos repellendus delectus doloribus.</p>
+              <div class="History-Logo"><!-- .History-Logo -->
+                <img class="" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt="New York">
+              </div><!-- /.History-Logo -->
+              <div class="History-Description"><!-- .History-Description -->
+                <p class="Font-DarkGray Font-Paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, nesciunt magni. Doloribus rem nisi temporibus, saepe ab sunt! Magnam odit laboriosam illum eaque voluptatibus voluptate commodi minima dicta iste enim.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam magnam quo obcaecati nesciunt explicabo reprehenderit sapiente veniam quibusdam accusamus aliquid consequuntur vero dolore, doloremque possimus non dignissimos repellendus delectus doloribus.</p>
+
+                <p class="Font-DarkGray Font-Paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, nesciunt magni. Doloribus rem nisi temporibus, saepe ab sunt! Magnam odit laboriosam illum eaque voluptatibus voluptate commodi minima dicta iste enim.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam magnam quo obcaecati nesciunt explicabo reprehenderit sapiente veniam quibusdam accusamus aliquid consequuntur vero dolore, doloremque possimus non dignissimos repellendus delectus doloribus.</p>
+              </div><!-- /.History-Description -->
             </article><!-- /.History -->
           </div><!-- /.container -->
         </section><!-- /.Box -->
