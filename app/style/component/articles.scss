@@ -1,0 +1,42 @@
+.Articles {
+  margin: $spaceLarge 0;
+
+  .col-md-4:first-child .ArticleBox {
+    margin-left: 0;
+  }
+
+  .col-md-4:last-child .ArticleBox {
+    margin-right: 0;
+  }
+}
+
+.Article {
+  &Box {
+    background: $white;
+    padding: $spaceBig;
+    margin: 0 $spaceSmall;
+  }
+
+  &-Title {
+
+  }
+
+  &-Image {
+    max-width: 100%;
+  }
+
+  &-Description {
+    height: 90px;
+    overflow: hidden;
+  }
+
+  &-Footer {
+    text-align: right;
+  }
+
+  &-Image,
+  &-Description,
+  &-Footer {
+    margin-top: $spaceBig;
+  }
+}

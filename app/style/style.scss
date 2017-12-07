@@ -11,6 +11,7 @@
 */
 
 /* Global */
+@import "global/mixins.scss";
 @import "global/bootstrap";
 @import "global/breakpoint";
 @import "global/space";
@@ -25,3 +26,5 @@
 @import "component/navbar";
 @import "component/carousel";
 @import "component/box";
+@import "component/articles";
+@import "component/history";
