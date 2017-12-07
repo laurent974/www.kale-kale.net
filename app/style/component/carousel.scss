@@ -1,0 +1,17 @@
+.Carousel {
+  position: relative;
+
+  &-Slogan {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    top: 40%;
+    left: $spaceExtraLarge;
+    background: $black;
+    color: $white;
+    padding: $spaceSmall $spaceRegular;
+
+    @extend .Font-Banner;
+    @extend .Font-Upper;
+  }
+}

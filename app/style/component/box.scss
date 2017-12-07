@@ -1,0 +1,26 @@
+@mixin triangle($color) {
+  background: url('data:image/svg+xml;utf8,<svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1919.76 64"><defs><style>.cls-1{fill:#{$color};}</style></defs><title>cache_triangle</title><polygon class="cls-1" points="0 0 960 60 1919.76 0 1919.76 64 0 64 0 0"/></svg>') no-repeat;
+}
+
+.Box {
+  position: relative;
+  margin: 0;
+  padding: 0;
+
+  &-Decoration {
+    position: relative;
+    z-index: 1;
+    @include triangle($yellow);
+    position: absolute;
+    top: -72px;
+    left: 0;
+    height: 52px;
+    width: 100%;
+    background-position: center top;
+    background-size: 105% auto;
+  }
+
+  &--yellow {
+    background-color: $yellow;
+  }
+}
