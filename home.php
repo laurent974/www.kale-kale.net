@@ -76,27 +76,17 @@
           <div class="carousel-inner">
             <div class="item active">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/banniere-index1.jpg" alt="Slogan1">
+              <p class="Carousel-Slogan">Une <strong>phrase Slogan</strong> par ici</p>
             </div>
 
             <div class="item">
-              <img src="chicago.jpg" alt="Chicago">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/banniere-index1.jpg" alt="Chicago">
             </div>
 
             <div class="item">
-              <img src="ny.jpg" alt="New York">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/banniere-index1.jpg" alt="New York">
             </div>
           </div>
-
-          <!-- Left and right controls -->
-          <a class="left carousel-control" href="#Carousel" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-            <span class="sr-only">Précédent</span>
-          </a>
-          <a class="right carousel-control" href="#Carousel" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-            <span class="sr-only">Suivant</span>
-          </a>
-        </div><!-- /.Carousel -->
       </main><!-- /.Main -->
 
       <?php wp_footer(); ?>
