@@ -1,6 +1,6 @@
 .Title {
   display: inline-block;
-  padding: $spaceRegular;
+  padding: $spaceSmall $spaceRegular;
   @extend .Font-Black;
   @extend .Font-Upper;
 
@@ -13,11 +13,17 @@
   }
 
   &--H3 {
-
+    font-size: 22px;
+    @extend .Font-Black;
   }
 
   &--red {
     background: $red;
+    color: $white;
+  }
+
+  &--green {
+    background: $green;
     color: $white;
   }
 }
