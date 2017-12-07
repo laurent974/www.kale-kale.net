@@ -5,19 +5,22 @@
 .Box {
   position: relative;
   margin: 0;
-  padding: 0;
+  padding: $spaceBig 0 0;
 
   &-Decoration {
     position: relative;
     z-index: 1;
-    @include triangle($yellow);
     position: absolute;
-    top: -72px;
+    top: -53px;
     left: 0;
-    height: 52px;
+    height: 55px;
     width: 100%;
-    background-position: center top;
-    background-size: 105% auto;
+
+    &--yellow {
+      @include triangle($yellow);
+      background-position: center top;
+      background-size: 103% auto;
+    }
   }
 
   &--yellow {
