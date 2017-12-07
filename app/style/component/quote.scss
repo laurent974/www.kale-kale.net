@@ -1,0 +1,39 @@
+.Quote {
+  position: relative;
+  margin-top: 50px;
+
+  &-Author {
+    display: inline-block;
+    background: $white;
+    padding: $spaceSmall $spaceMedium $spaceSmall $spaceExtraLarge;
+    margin-top: $spaceBig;
+    float: right;
+    margin-right: 8.333333%;
+
+    &:after {
+      clear: both;
+    }
+  }
+
+  &-Image {
+    &Left {
+      top: -58px;
+      left: -50px;
+    }
+
+    &Right {
+      transform: rotate(180deg);
+      right: -70px;
+      top: 125px;
+    }
+
+    &Left,
+    &Right {
+      position: absolute;
+      background: url('assets/img/quote.png');
+      width: 136px;
+      height: 118px;
+
+    }
+  }
+}
