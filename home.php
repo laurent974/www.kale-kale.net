@@ -27,8 +27,8 @@
   </head>
   <body>
     <div class="Global"><!-- .Global -->
-      <div class="Header container-fluid">
-        <nav class="navbar navbar-default navbar-fixed-top" role="navigation"><!-- .navbar -->
+      <div class="Header container-fluid"><!-- .Header -->
+        <nav class="navbar navbar-default" role="navigation"><!-- .navbar -->
           <div class="navbar-inner container-fluid"><!-- .container-fluid -->
 
             <div class="navbar-header"><!-- .navbar-header -->
@@ -48,25 +48,55 @@
               </a>
             </div><!-- /!.navbar-header -->
             <?php
-            wp_nav_menu( array(
-              'menu'              => 'header-menu',
-              'depth'             => 0,
-              'container'         => false,
-              'menu_class'        => 'nav navbar-nav collapse',
-              'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
-              'walker'            => new WP_Bootstrap_Navwalker())
-            );
-            ?>
-
-            <div class="navbar-Lang pull-right hidden-xs"><!-- .navbar-Lang -->
+              wp_nav_menu( array(
+                'menu'              => 'header-menu',
+                'depth'             => 0,
+                'container'         => false,
+                'menu_class'        => 'nav navbar-nav collapse',
+                'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+                'walker'            => new WP_Bootstrap_Navwalker())
+              );
+            ?><div class="navbar-Lang pull-right hidden-xs"><!-- .navbar-Lang -->
               <?php do_action('wpml_add_language_selector'); ?>
             </div><!-- /.navbar-Lang -->
           </div><!-- /!.container-fluid -->
         </nav><!-- /!.navbar -->
-      </div>
+      </div><!-- /.Header -->
 
-      <main class="Main container-fluid"><!-- .Main --->
-        Home
+      <main class="Main"><!-- .Main --->
+        <div id="Carousel" class="carousel slide" data-ride="carousel"><!-- .Carousel -->
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#Carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#Carousel" data-slide-to="1"></li>
+            <li data-target="#Carousel" data-slide-to="2"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/banniere-index1.jpg" alt="Slogan1">
+            </div>
+
+            <div class="item">
+              <img src="chicago.jpg" alt="Chicago">
+            </div>
+
+            <div class="item">
+              <img src="ny.jpg" alt="New York">
+            </div>
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#Carousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Précédent</span>
+          </a>
+          <a class="right carousel-control" href="#Carousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Suivant</span>
+          </a>
+        </div><!-- /.Carousel -->
       </main><!-- /.Main -->
 
       <?php wp_footer(); ?>
