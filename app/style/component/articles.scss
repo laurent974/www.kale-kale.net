@@ -4,17 +4,13 @@
   .col-md-4:first-child .ArticleBox {
     margin-left: 0;
   }
-
-  .col-md-4:last-child .ArticleBox {
-    margin-right: 0;
-  }
 }
 
 .Article {
   &Box {
     background: $white;
     padding: $spaceBig;
-    margin: 0 $spaceSmall;
+    margin-left: $spaceMedium ;
   }
 
   &-Title {
@@ -23,6 +19,7 @@
 
   &-Image {
     max-width: 100%;
+    min-height: 240px;
   }
 
   &-Description {
