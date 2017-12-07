@@ -1,0 +1,23 @@
+.Title {
+  display: inline-block;
+  padding: $spaceRegular;
+  @extend .Font-Black;
+  @extend .Font-Upper;
+
+  &--H1 {
+
+  }
+
+  &--H2 {
+
+  }
+
+  &--H3 {
+
+  }
+
+  &--red {
+    background: $red;
+    color: $white;
+  }
+}
