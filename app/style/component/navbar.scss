@@ -23,6 +23,8 @@
 
     @include breakpoint(sm) {
       display: inline-block;
+      zoom: 1;
+      margin-bottom: -6px;
     }
   }
 
@@ -32,7 +34,7 @@
       margin-left   : -5px;
       padding       : 0;
       float: none;
-      display: block;
+      display: inline-block;
       height: auto;
 
       @include breakpoint(xs) {
@@ -57,6 +59,26 @@
 
 
   //item Menu
+  .navbar-nav > li#menu-item-17 > a:before {
+    background: $yellow;
+  }
+
+  .navbar-nav > li#menu-item-18 > a:before {
+    background: $green;
+  }
+
+  .navbar-nav > li#menu-item-19 > a:before {
+    background: $blue;
+  }
+
+  .navbar-nav > li#menu-item-20 > a:before {
+    background: $purple;
+  }
+
+  .navbar-nav > li#menu-item-16 > a:before {
+    background: $red;
+  }
+
   .navbar-nav > li > a {
     transform : perspective(1px) translateZ(0);
     box-shadow: 0 0 1px transparent;
@@ -65,7 +87,7 @@
     @extend .Font-Big;
     @extend .Font-Black;
     padding: $spaceBig $spaceMedium;
-    margin: 0 $spaceMedium;
+    margin: 0 $spaceSmall;
 
     @include breakpoint(xs) {
       padding: $spaceMedium 0;
@@ -88,20 +110,23 @@
       bottom                    : 0;
       border-top-left-radius    : 5px;
       border-top-right-radius   : 5px;
-      background                : $red;
       height                    : 50px;
-      transform                 : translateY(43px);
+      transform                 : translateY(45px);
       transition-property       : transform;
       transition-duration       : 0.3s;
       transition-timing-function: ease-out;
     }
   }
 
-  .navbar-nav > .active > a {
+  .navbar-nav > li.active > a {
     background-color: transparent;
     @extend .Font-White;
 
     &:before {
+      transform: translateY(0);
+    }
+
+    &:hover:before {
       transform: translateY(0);
     }
   }
