@@ -96,6 +96,51 @@
           <div class="container"><!-- .container -->
             <h3 class="Title Title--red Font-Title">Les derniers Projets</h3>
 
+            <div class="Articles row row-no-padding"><!-- .Articles -->
+              <div class="col-md-4"><!-- .col-md-4 -->
+                <article class="ArticleBox"><!-- .ArticleBox -->
+                  <h3 class="Article-Title Title--H3 Font-DarkGray">Recolte de fond pour les écoles</h3>
+                  <img class="Article-Image" src="<?php echo get_template_directory_uri(); ?>/assets/img/project-preview.jpg" alt="New York">
+                  <p class="Article-Description Font-Paragraph Font-DarkGray">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati reprehenderit illo, laudantium ab itaque dolores nam ducimus deleniti voluptatem, unde, tempore sed nulla voluptates architecto nostrum est magni explicabo, nemo?</p>
+                  <footer class="Article-Footer"><!-- .Article-Footer -->
+                    <a href="">En savoir +</a>
+                  </footer><!-- /.Article-Footer -->
+                </article><!-- /.ArticleBox -->
+              </div><!-- /.col-md-4 -->
+
+              <div class="col-md-4"><!-- .col-md-4 -->
+                <article class="ArticleBox"><!-- .ArticleBox -->
+                  <h3 class="Article-Title Title--H3 Font-DarkGray">Recolte de fond pour les écoles</h3>
+                  <img class="Article-Image" src="<?php echo get_template_directory_uri(); ?>/assets/img/project-preview.jpg" alt="New York">
+                  <p class="Article-Description Font-Paragraph Font-DarkGray">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati reprehenderit illo, laudantium ab itaque dolores nam ducimus deleniti voluptatem, unde, tempore sed nulla voluptates architecto nostrum est magni explicabo, nemo?</p>
+                  <footer class="Article-Footer"><!-- .Article-Footer -->
+                    <a href="">En savoir +</a>
+                  </footer><!-- /.Article-Footer -->
+                </article><!-- /.ArticleBox -->
+              </div><!-- /.col-md-4 -->
+
+              <div class="col-md-4"><!-- .col-md-4 -->
+                <article class="ArticleBox"><!-- .ArticleBox -->
+                  <h3 class="Article-Title Title--H3 Font-DarkGray">Recolte de fond pour les écoles</h3>
+                  <img class="Article-Image" src="<?php echo get_template_directory_uri(); ?>/assets/img/project-preview.jpg" alt="New York">
+                  <p class="Article-Description Font-Paragraph Font-DarkGray">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati reprehenderit illo, laudantium ab itaque dolores nam ducimus deleniti voluptatem, unde, tempore sed nulla voluptates architecto nostrum est magni explicabo, nemo?</p>
+                  <footer class="Article-Footer"><!-- .Article-Footer -->
+                    <a href="">En savoir +</a>
+                  </footer><!-- /.Article-Footer -->
+                </article><!-- /.ArticleBox -->
+              </div><!-- /.col-md-4 -->
+            </div><!-- /.Articles -->
+          </div><!-- /.container -->
+        </section><!-- /.Box -->
+
+        <section class="Box"><!-- .Box -->
+          <div class="Box-Decoration Box-Decoration--yellow"></div>
+          <div class="container"><!-- .container -->
+            <h3 class="Title Title--green Font-Title">Notre Histoire</h3>
+            <article class="History"><!-- .History -->
+              <img class="History-Logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt="New York">
+              <p class="History-Description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, nesciunt magni. Doloribus rem nisi temporibus, saepe ab sunt! Magnam odit laboriosam illum eaque voluptatibus voluptate commodi minima dicta iste enim.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam magnam quo obcaecati nesciunt explicabo reprehenderit sapiente veniam quibusdam accusamus aliquid consequuntur vero dolore, doloremque possimus non dignissimos repellendus delectus doloribus.</p>
+            </article><!-- /.History -->
           </div><!-- /.container -->
         </section><!-- /.Box -->
       </main><!-- /.Main -->
